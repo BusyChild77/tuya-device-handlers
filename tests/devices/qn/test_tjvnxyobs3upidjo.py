@@ -1,9 +1,4 @@
-"""Test device-level quirk initialisation for QN devices.
-
-Note: `qn_tjvnxyobs3upidjo.json` is a placeholder fixture, not a real
-diagnostics capture, so the pre-quirk `mode` range asserted here is
-assumed rather than observed.
-"""
+"""Test device-level quirk initialisation for QN devices."""
 
 import json
 
