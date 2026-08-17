@@ -1,0 +1,188 @@
+{
+  "_synthetic_fixture": "PLACEHOLDER - not captured from a real device. Replace with the `data` object of a Home Assistant diagnostics download for a real tjvnxyobs3upidjo heater (minus the id/terminal_id/home_assistant keys) before submitting.",
+  "endpoint": "https://apigw.tuyaeu.com",
+  "mqtt_connected": true,
+  "disabled_by": null,
+  "disabled_polling": false,
+  "name": "Heater",
+  "category": "qn",
+  "product_id": "tjvnxyobs3upidjo",
+  "product_name": "Heater",
+  "online": true,
+  "sub": false,
+  "time_zone": "+02:00",
+  "active_time": "2026-08-17T09:24:28+00:00",
+  "create_time": "2026-08-17T09:24:28+00:00",
+  "update_time": "2026-08-17T09:24:28+00:00",
+  "function": {
+    "switch": {
+      "type": "Boolean",
+      "value": "{}"
+    },
+    "temp_set": {
+      "type": "Integer",
+      "value": "{\"unit\":\"℃\",\"min\":15,\"max\":35,\"scale\":0,\"step\":1}"
+    },
+    "mode": {
+      "type": "Enum",
+      "value": "{\"range\":[\"eco\"]}"
+    },
+    "level": {
+      "type": "Enum",
+      "value": "{\"range\":[\"level_1\",\"level_2\"]}"
+    },
+    "child_lock": {
+      "type": "Boolean",
+      "value": "{}"
+    },
+    "countdown_set": {
+      "type": "Enum",
+      "value": "{\"range\":[\"cancel\",\"1h\",\"2h\",\"3h\"]}"
+    }
+  },
+  "status_range": {
+    "switch": {
+      "type": "Boolean",
+      "value": "{}",
+      "report_type": null
+    },
+    "temp_set": {
+      "type": "Integer",
+      "value": "{\"unit\":\"℃\",\"min\":15,\"max\":35,\"scale\":0,\"step\":1}",
+      "report_type": null
+    },
+    "temp_current": {
+      "type": "Integer",
+      "value": "{\"unit\":\"℃\",\"min\":0,\"max\":50,\"scale\":0,\"step\":1}",
+      "report_type": null
+    },
+    "mode": {
+      "type": "Enum",
+      "value": "{\"range\":[\"eco\"]}",
+      "report_type": null
+    },
+    "level": {
+      "type": "Enum",
+      "value": "{\"range\":[\"level_1\",\"level_2\"]}",
+      "report_type": null
+    },
+    "child_lock": {
+      "type": "Boolean",
+      "value": "{}",
+      "report_type": null
+    },
+    "countdown_set": {
+      "type": "Enum",
+      "value": "{\"range\":[\"cancel\",\"1h\",\"2h\",\"3h\"]}",
+      "report_type": null
+    },
+    "fault": {
+      "type": "Bitmap",
+      "value": "{\"label\":[\"overheat\",\"sensor_fault\"]}",
+      "report_type": null
+    }
+  },
+  "status": {
+    "switch": true,
+    "temp_set": 21,
+    "temp_current": 19,
+    "mode": "eco",
+    "level": "level_2",
+    "child_lock": false,
+    "countdown_set": "cancel",
+    "fault": 0
+  },
+  "set_up": true,
+  "support_local": true,
+  "local_strategy": {
+    "1": {
+      "value_convert": "default",
+      "status_code": "switch",
+      "config_item": {
+        "statusFormat": "{\"switch\":\"$\"}",
+        "valueDesc": "{}",
+        "valueType": "Boolean",
+        "enumMappingMap": {},
+        "pid": "tjvnxyobs3upidjo"
+      }
+    },
+    "2": {
+      "value_convert": "default",
+      "status_code": "temp_set",
+      "config_item": {
+        "statusFormat": "{\"temp_set\":\"$\"}",
+        "valueDesc": "{\"unit\":\"℃\",\"min\":15,\"max\":35,\"scale\":0,\"step\":1}",
+        "valueType": "Integer",
+        "enumMappingMap": {},
+        "pid": "tjvnxyobs3upidjo"
+      }
+    },
+    "3": {
+      "value_convert": "default",
+      "status_code": "temp_current",
+      "config_item": {
+        "statusFormat": "{\"temp_current\":\"$\"}",
+        "valueDesc": "{\"unit\":\"℃\",\"min\":0,\"max\":50,\"scale\":0,\"step\":1}",
+        "valueType": "Integer",
+        "enumMappingMap": {},
+        "pid": "tjvnxyobs3upidjo"
+      }
+    },
+    "4": {
+      "value_convert": "default",
+      "status_code": "mode",
+      "config_item": {
+        "statusFormat": "{\"mode\":\"$\"}",
+        "valueDesc": "{\"range\":[\"eco\"]}",
+        "valueType": "Enum",
+        "enumMappingMap": {},
+        "pid": "tjvnxyobs3upidjo"
+      }
+    },
+    "5": {
+      "value_convert": "default",
+      "status_code": "level",
+      "config_item": {
+        "statusFormat": "{\"level\":\"$\"}",
+        "valueDesc": "{\"range\":[\"level_1\",\"level_2\"]}",
+        "valueType": "Enum",
+        "enumMappingMap": {},
+        "pid": "tjvnxyobs3upidjo"
+      }
+    },
+    "10": {
+      "value_convert": "default",
+      "status_code": "child_lock",
+      "config_item": {
+        "statusFormat": "{\"child_lock\":\"$\"}",
+        "valueDesc": "{}",
+        "valueType": "Boolean",
+        "enumMappingMap": {},
+        "pid": "tjvnxyobs3upidjo"
+      }
+    },
+    "12": {
+      "value_convert": "default",
+      "status_code": "fault",
+      "config_item": {
+        "statusFormat": "{\"fault\":\"$\"}",
+        "valueDesc": "{\"label\":[\"overheat\",\"sensor_fault\"]}",
+        "valueType": "Bitmap",
+        "enumMappingMap": {},
+        "pid": "tjvnxyobs3upidjo"
+      }
+    },
+    "19": {
+      "value_convert": "default",
+      "status_code": "countdown_set",
+      "config_item": {
+        "statusFormat": "{\"countdown_set\":\"$\"}",
+        "valueDesc": "{\"range\":[\"cancel\",\"1h\",\"2h\",\"3h\"]}",
+        "valueType": "Enum",
+        "enumMappingMap": {},
+        "pid": "tjvnxyobs3upidjo"
+      }
+    }
+  },
+  "warnings": null
+}
