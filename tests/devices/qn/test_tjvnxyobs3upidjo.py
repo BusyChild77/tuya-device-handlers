@@ -19,9 +19,7 @@ def test_heater_expands_mode_range(
     """Test tjvnxyobs3upidjo expands the mode enum range."""
     device = create_device("qn_tjvnxyobs3upidjo.json")
 
-    assert json.loads(device.status_range["mode"].values) == {
-        "range": ["eco"]
-    }
+    assert json.loads(device.status_range["mode"].values) == {"range": ["eco"]}
     assert json.loads(device.function["mode"].values) == {"range": ["eco"]}
 
     filled_quirks_registry.initialise_device_quirk(device)
